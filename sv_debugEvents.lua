@@ -19,11 +19,11 @@ AddEventHandler('ft_debug:SvDebug', function(data)
 end)
 
 -- Save player positions in file
-RegisterServerEvent("ft_debugPlayer:SvSavePos")
-AddEventHandler("ft_debugPlayer:SvSavePos", function(pos)
+RegisterServerEvent("ft_debugPlayer:SvSaveToFile")
+AddEventHandler("ft_debugPlayer:SvSaveToFile", function(string, name)
 
-  local file = io.open('resources/positions.txt', "a")
-  newFile = pos
+  local file = io.open('resources/' .. name .. '.txt', "a")
+  newFile = string
   file:write(newFile)
   file:flush()
   file:close()

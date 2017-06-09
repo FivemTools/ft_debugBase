@@ -24,6 +24,6 @@ AddEventHandler('ft_debugPlayer:ClPos', function(name)
 
     local string = "{ x = " .. pos.x .. ", y = " .. pos.y .. ", z = " .. pos.z .. ", name = '" .. name .. "' },\n"
     TriggerEvent('chatMessage', 'SYSTEM', {255, 0, 0}, "x:" .. pos.x .. " - y:" .. pos.y .. " - z:" .. pos.z)
-    TriggerServerEvent('ft_debugPlayer:SvSavePos', string)
+    TriggerServerEvent('ft_debugPlayer:SvSaveToFile', string, "pos")
   end)
 end)
