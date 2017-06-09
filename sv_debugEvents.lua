@@ -2,7 +2,7 @@
 -- @Date:   2017-06-08T23:28:39+02:00
 -- @Project: FiveM Tools
 -- @Last modified by:
--- @Last modified time: 2017-06-09T13:33:14+02:00
+-- @Last modified time: 2017-06-09T13:47:45+02:00
 -- @License: GNU General Public License v3.0
 
 -- Import lib
@@ -19,13 +19,6 @@ AddEventHandler('ft_debug:SvDebug', function(data)
     print("Empty")
   end
   print("-----------------------------")
-
-end)
-
--- Save player pos command
-TriggerEvent("ft:SvAddSimpleCommand", "pos", 2, function(source, args)
-
-  TriggerClientEvent('ft_debugPlayer:SvPos', source, args)
 
 end)
 
