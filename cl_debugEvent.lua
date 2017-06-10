@@ -2,12 +2,12 @@
 -- @Date:   2017-06-08T23:28:39+02:00
 -- @Project: FiveM Tools
 -- @Last modified by:
--- @Last modified time: 2017-06-09T18:46:59+02:00
+-- @Last modified time: 2017-06-10T12:23:34+02:00
 -- @License: GNU General Public License v3.0
 
 -- get all item
-RegisterNetEvent('ft_debug:ClDebug')
-AddEventHandler('ft_debug:ClDebug', function(data)
+RegisterNetEvent('ft_debugBase:ClDebug')
+AddEventHandler('ft_debugBase:ClDebug', function(data)
   Citizen.CreateThread(function()
 
     TriggerServerEvent("ft_debug:SvDebug", data)
@@ -16,8 +16,8 @@ AddEventHandler('ft_debug:ClDebug', function(data)
 end)
 
 -- Save player pos
-RegisterNetEvent('ft_debugPlayer:ClPos')
-AddEventHandler('ft_debugPlayer:ClPos', function(name)
+RegisterNetEvent('ft_debugBase:ClPos')
+AddEventHandler('ft_debugBase:ClPos', function(name)
   Citizen.CreateThread(function()
 
     local player = GetPlayerPed(-1)
