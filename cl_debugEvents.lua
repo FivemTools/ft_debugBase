@@ -2,7 +2,7 @@
 -- @Date:   2017-06-08T23:28:39+02:00
 -- @Project: FiveM Tools
 -- @Last modified by:
--- @Last modified time: 2017-06-10T12:23:34+02:00
+-- @Last modified time: 2017-06-10T17:19:58+02:00
 -- @License: GNU General Public License v3.0
 
 -- get all item
@@ -25,7 +25,7 @@ AddEventHandler('ft_debugBase:ClPos', function(name)
 
     local string = "{ x = " .. pos.x .. ", y = " .. pos.y .. ", z = " .. pos.z .. ", name = '" .. name .. "' },\n"
     TriggerEvent('chatMessage', 'SYSTEM', {255, 0, 0}, "x:" .. pos.x .. " - y:" .. pos.y .. " - z:" .. pos.z)
-    TriggerServerEvent('ft_debugPlayer:SvSaveToFile', string, "pos")
+    TriggerServerEvent('ft_debugBase:SvSaveToFile', string, "pos")
 
   end)
 end)
