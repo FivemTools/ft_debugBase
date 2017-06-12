@@ -1,8 +1,6 @@
--- @Author: samuelds
--- @Date:   2017-06-08T23:28:39+02:00
+-- @Date:   2017-06-11T23:21:17+02:00
 -- @Project: FiveM Tools
--- @Last modified by:
--- @Last modified time: 2017-06-10T12:23:43+02:00
+-- @Last modified time: 2017-06-11T23:21:18+02:00
 -- @License: GNU General Public License v3.0
 
 -- Allows the server to spawn the player
