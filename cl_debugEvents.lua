@@ -8,7 +8,7 @@ RegisterNetEvent('ft_debugBase:ClDebug')
 AddEventHandler('ft_debugBase:ClDebug', function(data)
   Citizen.CreateThread(function()
 
-    TriggerServerEvent("ft_debug:SvDebug", data)
+    TriggerServerEvent("ft_debugBase:SvDebug", data)
 
   end)
 end)
